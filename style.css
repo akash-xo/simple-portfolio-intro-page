@@ -1,101 +1,98 @@
 body{
-margin:0;
-height:100vh;
-background:#000000;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family: "Times New Roman", serif;
-overflow:hidden;
+    margin:0;
+    height:100vh;
+    background:#000000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family: "Times New Roman", serif;
+    overflow:hidden;
 }
 
 /* container */
 
 .hero{
-text-align:center;
-color:white;
+    text-align:center;
+    color:white;
 }
 
 /* title */
 
 .title{
-letter-spacing:14px;
-font-size:40px;
-font-weight:300;
-margin:20px 0;
-opacity:0;
-animation:titleFade 5s ease forwards;
-animation-delay:0ms;
+    letter-spacing:14px;
+    font-size:40px;
+    font-weight:300;
+    margin:20px 0;
+    opacity:0;
+    animation:titleFade 5s ease forwards;
+    animation-delay:0ms;
 }
 
 /* line container */
 
-.line-container{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:5px;
+    .line-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
 }
 
 /* lines */
 
 .line{
-height:0.5px;
-width:0px;
-animation:expand 1s ease forwards;
-background:linear-gradient(90deg,#caa95c,#fff3c4,#caa95c);
-box-shadow:0 0 6px rgba(255,215,130,0.4);
+    height:0.5px;
+    width:0px;
+    animation:expand 1s ease forwards;
+    background:linear-gradient(90deg,#caa95c,#fff3c4,#caa95c);
+    box-shadow:0 0 6px rgba(255,215,130,0.4);
 }
 
 /* left line */
 
 .left{
-animation:expandLeft 3s ease forwards;
+    animation:expandLeft 3s ease forwards;
 }
 
 /* right line */
 
 .right{
-animation:expandRight 3s ease forwards;
+    animation:expandRight 3s ease forwards;
 }
 
 /* animations */
 
 @keyframes expandLeft{
-0%{
-width:0;
-}
-100%{
-width:170px;
-}
+    0%{
+    width:0;
+    }
+    100%{
+    width:170px;
+    }
 }
 
 @keyframes expandRight{
-0%{
-width:0;
-}
-100%{
-width:170px;
-}
+    0%{
+    width:0;
+    }
+    100%{
+    width:170px;
+    }
 }
 
 @keyframes expand{
-0%{width:0;}
-100%{width:175px;}
+    0%{width:0;}
+    100%{width:175px;}
 }
 
 /* text animation */
-
 @keyframes titleFade{
-
-0%{
-opacity:0;
-transform:translateY(13px);
-}
-
-100%{
-opacity:1;
-transform:translateY(0);
-}
+    0%{
+    opacity:0;
+    transform:translateY(13px);
+    }
+    100%{
+    opacity:1;
+    transform:translateY(0);
+    }
 
 }
